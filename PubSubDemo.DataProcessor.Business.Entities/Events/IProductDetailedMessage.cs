@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PubSubDemo.DataProcessor.Business.Entities
 {
-    public interface IProductSavedMessage
+    public interface IProductDetailedMessage
     {
         Guid MessageId { get; set; }
         Product Product { get; set; }

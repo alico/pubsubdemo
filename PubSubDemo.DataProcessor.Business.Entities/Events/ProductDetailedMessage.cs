@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PubSubDemo.DataProcessor.Business.Entities.Events
 {
-    public class ProductSavedMessage : IProductSavedMessage
+    public class ProductDetailedMessage : IProductDetailedMessage
     {
         public Guid MessageId { get; set; }
         public Product Product { get; set; }

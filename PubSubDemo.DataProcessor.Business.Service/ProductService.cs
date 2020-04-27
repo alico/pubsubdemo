@@ -44,7 +44,7 @@ namespace PubSubDemo.DataProcessor.Business.Service
             {
                 var publisher = _serviceProvider.GetService<IPublishEndpoint>();
 
-                var productSavedMessage = new ProductSavedMessage()
+                var productSavedMessage = new ProductDetailedMessage()
                 {
                     MessageId = new Guid(),
                     Product = product,

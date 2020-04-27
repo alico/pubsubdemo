@@ -32,7 +32,7 @@ namespace PubSubDemo.EventProcessor
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<DWHWorker>();
-                    services.AddHostedService<ProductListWorker>();
+                    services.AddHostedService<ProductIndexWorker>();
                     services.RegisterConfigurationServices(hostContext);
                     services.RegisterQueueServices(hostContext);
                     services.RegisterRepositoryServices();

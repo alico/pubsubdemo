@@ -11,16 +11,16 @@ using PubSubDemo.DataProcessor.Data.Entities;
 
 namespace PubSubDemo.EventProcessor.Business.Service
 {
-    public class ProductListConsumer : IConsumer<IProductSavedMessage>
+    public class ProductIndexConsumer : IConsumer<IProductDetailedMessage>
     {
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<ProductListConsumer> _logger;
-        public ProductListConsumer(IServiceProvider serviceProvider, ILogger<ProductListConsumer> logger)
+        private readonly ILogger<ProductIndexConsumer> _logger;
+        public ProductIndexConsumer(IServiceProvider serviceProvider, ILogger<ProductIndexConsumer> logger)
         {
             _serviceProvider = serviceProvider;
             _logger = logger;
         }
-        public async Task Consume(ConsumeContext<IProductSavedMessage> context)
+        public async Task Consume(ConsumeContext<IProductDetailedMessage> context)
         {
             try
             {

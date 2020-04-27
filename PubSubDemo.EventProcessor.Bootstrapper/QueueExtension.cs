@@ -19,7 +19,7 @@ namespace PubSubDemo.EventProcessor.Bootstrapper
 
             services.AddMassTransit(c =>
             {
-                c.AddConsumer<ProductListConsumer>();
+                c.AddConsumer<ProductIndexConsumer>();
                 c.AddConsumer<DWHConsumer>();
             });
 

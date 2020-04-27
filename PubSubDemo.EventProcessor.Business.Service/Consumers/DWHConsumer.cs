@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace PubSubDemo.EventProcessor.Business.Service
 {
-    public class DWHConsumer : IConsumer<IProductSavedMessage>
+    public class DWHConsumer : IConsumer<IProductDetailedMessage>
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<DWHConsumer> _logger;
@@ -20,7 +20,7 @@ namespace PubSubDemo.EventProcessor.Business.Service
             _serviceProvider = serviceProvider;
             _logger = logger;
         }
-        public async Task Consume(ConsumeContext<IProductSavedMessage> context)
+        public async Task Consume(ConsumeContext<IProductDetailedMessage> context)
         {
             try
             {
