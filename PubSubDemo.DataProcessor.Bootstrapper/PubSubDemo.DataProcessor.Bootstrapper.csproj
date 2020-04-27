@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.2.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.2" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="3.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Business.Service.Contract\PubSubDemo.DataProcessor.Business.Service.Contract.csproj" />
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Business.Service\PubSubDemo.DataProcessor.Business.Service.csproj" />
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Data\PubSubDemo.DataProcessor.Data.csproj" />
+    <ProjectReference Include="..\PubSubDemo.Utils\PubSubDemo.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

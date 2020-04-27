@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "PubSubDemo.DataProcessor": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

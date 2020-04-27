@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Data.Entities\PubSubDemo.DataProcessor.Data.Entities.csproj" />
+    <ProjectReference Include="..\PubSubDemo.ProductAPI.Entities\PubSubDemo.ProductAPI.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

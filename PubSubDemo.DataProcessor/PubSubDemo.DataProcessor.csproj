@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-PubSubDemo.DataProcessor-5D965F36-C641-4BAA-A346-4ECA6C8D4790</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="6.2.1" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="3.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Bootstrapper\PubSubDemo.DataProcessor.Bootstrapper.csproj" />
+    <ProjectReference Include="..\PubSubDemo.DataProcessor.Business.Service\PubSubDemo.DataProcessor.Business.Service.csproj" />
+    <ProjectReference Include="..\PubSubDemo.Utils\PubSubDemo.Utils.csproj" />
+  </ItemGroup>
+</Project>
