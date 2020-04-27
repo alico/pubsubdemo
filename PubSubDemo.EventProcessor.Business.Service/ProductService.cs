@@ -25,13 +25,13 @@ namespace PubSubDemo.EventProcessor.Business.Service
         public async Task Save(List<PubSubDemo.DataProcessor.Data.Entities.Product> products)
         {
             var productEntities = products.Select(x => new Product() {
-                Id = x.Id,
                 Name = x.Name,
                 Price = x.Price,
                 Quantity = x.Quantity,
                 CreationDate = x.CreationDate,
                 LastModifyDate = x.LastModifyDate
-            });
+            }).ToList();
+
             var repository = _serviceProvider.GetService<IProductRepository>();
             await repository.AddRange(productEntities);
         }
